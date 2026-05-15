@@ -1,8 +1,6 @@
 # subcompany-data-integration-pipeline
 An end-to-end data integration pipeline using Databricks, PySpark, and AWS S3 to clean and merge an acquired sub-company's raw data into a centralized corporate Delta Lake Gold layer.
 
-# Data Integration Pipeline: Post-Acquisition Sub-Company Ingestion
-
 ## Project Overview
 This data engineering project implements an end-to-end ELT pipeline to solve a realistic corporate Mergers & Acquisitions (M&A) scenario. The objective is to ingest raw operational data from a newly acquired child company stored in cloud storage, process it through a structured Medallion Architecture, and seamlessly merge it into the existing Gold layer of the parent company's centralized data platform.
 
