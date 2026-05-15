@@ -13,16 +13,7 @@ This data engineering project implements an end-to-end ELT pipeline to solve a r
 
 ## Architecture Diagram
 
-[AWS S3 Raw Bucket] ──► [Databricks Bronze Layer] (Raw Ingestion)
-                                   │
-                                   ▼
-                        [Databricks Silver Layer] (Cleaning & Schema Enforcement)
-                                   │
-                                   ▼
-			[Databricks Gold Layer] (Match Business Logic with Parent Company)
-                                   │
-                                   ▼
-[Parent Gold Schema Sample] ──► [Delta Lake Merge (Upsert)] ──► [Final Consolidated Gold Catalog]
+[AWS S3 Raw Bucket] ──► [Databricks Bronze Layer] (Raw Ingestion) ──► [Databricks Silver Layer] (Cleaning & Schema Enforcement) ──► [Databricks Gold Layer] (Match Business Logic with Parent Company) ──► [Delta Lake Merge to Parent Gold Layer (Upsert)] ──► [Final Consolidated Gold Catalog]
 
 ---
 
