@@ -38,11 +38,11 @@ This data engineering project implements an end-to-end ELT pipeline to solve a r
 ## Repository Structure
 
 ```text
-├── notebooks folder/
+├── Notebooks/
 │   ├── 1_setup               		  # Setup date_table, catalogs and utilities.
 │   └── 2_dimension_data_processing  # Process customers, products and pricing data.
-├── data/
-│   ├── child_raw_sample.csv               # 5-row schema reference for incoming child company data
-│   └── parent_gold_sample.csv             # 5-row schema reference for existing target parent table
+├── sample data/
+│   ├── child company data              # reference for incoming child company data
+│   └── parent company data             # reference for existing target parent table
 ├── .gitignore                             # Ignores sensitive configuration and cluster state files
 └── README.md                              # Project documentation
