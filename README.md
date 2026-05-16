@@ -30,8 +30,9 @@ This data engineering project implements an end-to-end ELT pipeline to solve a r
 
 ```text
 ├── Notebooks/
-│   ├── 1_setup               		  # Setup date_table, catalogs and utilities.
+│   ├── 1_setup               		   # Setup date_table, catalogs and utilities.
 │   └── 2_dimension_data_processing  # Process customers, products and pricing data.
+│   └── 3_fact_data_processing       # Process transectional data.
 ├── sample data/
 │   ├── child company data              # reference for incoming child company data
 │   └── parent company data             # reference for existing target parent table
